@@ -32,3 +32,5 @@ Please delete options that are not relevant.
 ## Still Needs work:
 
 Please list any features/testing that still needs attention.
+
+## Gif
