@@ -7,6 +7,7 @@ class WebScraper
     @flower_array = []
   end
 
+
   def get_plant_info
     get_names.map do |name|
       image_info = Nokogiri::HTML(HTTParty.get("https://coloradoplants.jeffco.us/plantdetail.do?sna=#{name}&image=1")).css("#imVrSlide")
