@@ -34,3 +34,5 @@ Please delete options that are not relevant.
 Please list any features/testing that still needs attention.
 
 ## Gif
+
+Please include a gif to express your feelings
