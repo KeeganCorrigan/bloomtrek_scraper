@@ -1,0 +1,16 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Keegan/turing/4module/bloomtrek_scraper/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/Keegan/turing/4module/bloomtrek_scraper/app/controllers/application_controller.rb": [
+        0,
+        0
+      ]
+    },
+    "timestamp": 1540929604
+  }
+}
