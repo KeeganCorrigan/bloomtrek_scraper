@@ -6,7 +6,6 @@ ruby '2.4.3'
 gem 'pry-rails'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'rails', '~> 5.2.1'
-gem 'sqlite3'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
