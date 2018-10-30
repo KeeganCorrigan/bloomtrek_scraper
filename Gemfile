@@ -11,6 +11,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'httparty'
 gem 'nokogiri'
+gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails'
