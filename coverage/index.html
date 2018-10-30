@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-30T15:24:31-06:00">2018-10-30T15:24:31-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-30T15:29:04-06:00">2018-10-30T15:29:04-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.64%</span></span>
+    (<span class="covered_percent"><span class="green">94.92%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         779.77
+         740.17
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>56</b> relevant lines. 
-    <span class="green"><b>53</b> lines covered</span> and
+    <b>59</b> relevant lines. 
+    <span class="green"><b>56</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,9 +53,9 @@
       <tr>
         <td class="strong"><a href="#3a277e5f1d62e33fbc60791da20b19dc9e1c9099" class="src_link" title="app/controllers/api/v1/scrapers_controller.rb">app/controllers/api/v1/scrapers_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>17</td>
         <td>10</td>
-        <td>7</td>
-        <td>7</td>
+        <td>10</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -120,8 +120,8 @@
   <a name="Controllers"></a>
   <div>
     <b>2</b> files in total.
-    <b>8</b> relevant lines. 
-    <span class="green"><b>8</b> lines covered</span> and
+    <b>11</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -141,9 +141,9 @@
       <tr>
         <td class="strong"><a href="#3a277e5f1d62e33fbc60791da20b19dc9e1c9099" class="src_link" title="app/controllers/api/v1/scrapers_controller.rb">app/controllers/api/v1/scrapers_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>17</td>
         <td>10</td>
-        <td>7</td>
-        <td>7</td>
+        <td>10</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -430,8 +430,8 @@
     <h3>app/controllers/api/v1/scrapers_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -448,52 +448,94 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  def index</code>
+          <code class="ruby">  before_action :set_website, only: [:index]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    website = params[:website] + &quot;&amp;parkname=&quot; + params[:parkname].gsub(&quot; &quot;, &quot;+&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    scraper = WebScraper.new(website)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    plant_info = scraper.get_plant_info</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    cleaned_data = FlowerValidator.new(scraper.flower_array).clean_data</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    scraper = WebScraper.new(@website)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    scraper.get_plant_info</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    cleaned_data = FlowerValidator.new(scraper.flower_array).clean_data</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">    render json: cleaned_data</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_website</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @website = params[:website] + &quot;&amp;parkname=&quot; + params[:parkname].gsub(&quot; &quot;, &quot;+&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
